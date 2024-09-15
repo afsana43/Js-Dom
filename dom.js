@@ -45,3 +45,16 @@ for(const div of divs){
     
 }
 
+
+
+// create and append childs
+
+const fruitList = document.getElementById('fruits-list');
+// console.log(fruitList);
+
+const li = document.createElement('li');
+li.innerText = 'Mango';
+
+fruitList.appendChild(li)
+
+
