@@ -27,7 +27,21 @@ const favouriteFruites = document.querySelectorAll('.favouirte-fruits')
 
 // query selector  
 const favouriteFruite = document.querySelector('.favouirte-fruit li')
-console.log(favouriteFruite);
+// console.log(favouriteFruite);
 
 
+// style dom property
+const divs = document.querySelectorAll('div');
+// console.log(divs);
+
+// for of using add ,remove style
+for(const div of divs){
+    // console.log(div);
+    div.style.border = '2px solid red';
+    div.style.margin = '20px';
+    div.style.padding = '20px';
+    div.classList.add('text-center')
+    div.classList.remove('bg-color')
+    
+}
 
