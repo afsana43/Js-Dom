@@ -17,6 +17,17 @@ const placeLists = document.getElementById('favourite-place');
 
 // class selector 
 const fvrtFood = document.getElementsByClassName('favouirte-fruits');
-console.log(fvrtFood);
+// console.log(fvrtFood);
+
+
+// query selector all 
+const favouriteFruites = document.querySelectorAll('.favouirte-fruits')
+// console.log(favouriteFruites);
+
+
+// query selector  
+const favouriteFruite = document.querySelector('.favouirte-fruit li')
+console.log(favouriteFruite);
+
 
 
