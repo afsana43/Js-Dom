@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event handler</title>
+  </head>
+  <body>
+    <!-- event start today -->
+
+    <main>
+      <h1>Event handler in js</h1>
+      <button onclick="console.log('event clicked')">Click me</button>
+      <!-- onclick uses number 1 -->
+      <button
+        onclick="console.log(27)
+        "
+      >
+        Click Now
+      </button>
+
+      <!-- uses number 2 -->
+      <button onclick="ShowNow()">Show Now</button>
+      <button id="showMoreBtn">Show More</button>
+      <button id="click-More">Click More</button>
+      <button id="final-btn">Final btn</button>
+    </main>
+
+    <!-- event handeler seystem 2 way -->
+
+    <h2 id="reset-text">Default text</h2>
+    <button onclick="handleOnClick()">Reset Text</button>
+    <button id="event-listener">Text reset by event Listener</button>
+    <br />
+    <br />
+    <br />
+
+    <!-- input type  -->
+
+    <h1>update input filed</h1>
+    <p id="display-text">Default text</p>
+    <input id="input-field" type="text" /> <br />
+    <br />
+    <button id="update-btn">Update text</button>
+
+    <!-- comment add krar sytem -->
+    <h1>How to add a comment?</h1>
+
+    <div id="comment-conteiner">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, perspiciatis!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, perspiciatis!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, perspiciatis!</p>
+    </div>
+    
+  <div>
+    <textarea name="" id="comment-box" cols="60" rows="5"></textarea><br />
+    <button id="send-btn">Send</button>
+  </div>
+
+
+
+  <!-- delete method uses -->
+
+  <div style="margin-bottom: 500px;">
+
+    <h1 id="delete-text">Delete the text.</h1>
+    <input type="text" id="delete-box" placeholder="please type Delete">
+    <button id="delete-btn" disabled>Delete</button>
+
+  </div>
+
+    <script src="event.js"></script>
+  </body>
+</html>
