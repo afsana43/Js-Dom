@@ -67,10 +67,23 @@ document
     const pinNumber = getElementByIdInput("pin-number");
     //  console.log('admoney' , addMoney, pinNumber);
 
+    // isNan checking:
+    if (isNaN(addMoney)) {
+      alert("faild to addmoney");
+      return;
+    }
+
+    // pin validate
     if (pinNumber === 1234) {
       const balance = getTextValue("account-blance");
       const newBlance = balance + addMoney;
       document.getElementById("account-blance").innerText = newBlance;
+
+      // entry transction option-1:
+      const p = document.createElement("p");
+      p.innerText = `Added: ${addMoney} , Tk.New Balance:  ${newBlance}`;
+
+      document.getElementById("transction-container").appendChild(p);
     } else {
       alert("faild to add money!");
     }
